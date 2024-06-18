@@ -2,13 +2,17 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div className="flex items-center justify-center mb-10">
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" component=""/>
+      </Routes>
+    </BrowserRouter>
+    <div className="flex items-center justify-center mb-10">
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="" alt="Vite logo" />
         </a>
