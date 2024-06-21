@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Download from './components/Download'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           ...coming soon
         </p>
       </div>
+      <Download />
     </>
   )
 }
